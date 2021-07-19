@@ -19,7 +19,12 @@ app.get('/', (req, res) => {
 
   app.put('/', (req, res) => {
     // should respond with a the message below. 
-    res.send('Hey, you hit my post route!');
+    res.send('Hey, you hit my put route!');
+  });
+
+  app.delete('/', (req, res) => {
+    // should respond with a the message below. 
+    res.send('Hey, you hit my delete route!');
   });
 
 app.listen(PORT, () => console.log(`Server is Running on ${PORT}`));
