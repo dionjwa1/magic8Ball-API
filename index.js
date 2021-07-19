@@ -17,5 +17,9 @@ app.get('/', (req, res) => {
     res.send('Hey, you hit my post route!');
   });
 
+  app.put('/', (req, res) => {
+    // should respond with a the message below. 
+    res.send('Hey, you hit my post route!');
+  });
 
 app.listen(PORT, () => console.log(`Server is Running on ${PORT}`));
